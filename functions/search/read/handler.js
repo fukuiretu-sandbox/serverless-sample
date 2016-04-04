@@ -22,7 +22,7 @@ module.exports.handler = function(event, context) {
     var hits = resp.hits.hits;
     _(hits).each(function(v) {
       console.log('name:' + v._source.name);
-    })
+    });
   }, function (err) {
     console.trace(err.message);
   });
